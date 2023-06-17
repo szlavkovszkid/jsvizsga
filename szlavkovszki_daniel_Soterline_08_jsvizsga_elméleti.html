@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Mikor használandó a JS egy weboldal felépítése során, hogyan használható?<br><br>
+Amikor tömbökkel, objectekkel, adatbázisokkal kell dolgozzunk vagy logikai műveletekkel.
+Ezen kívűs tudjuk a css és html részét is módosítani DOM manipulációval.
+
+Sorold fel, hogyan határozhatunk meg egy értéket és röviden definiáld őket.<br><br>
+
+Let helyi csak az adott futtatáson belűl lehet használni<br><br>
+var az egész js-en belűl érvényes és használható<br><br>
+const egyedi nem változó azonosító fix<br><br>
+
+
+Ismertesd a literálókat.<br><br>
+
+
+Integer (egész számokhoz használjuk)<br><br>
+
+Boolean (logikai ha valaminek csak két kimenetele lehet igaz vagy hamis)<br><br>
+
+String (sztring ezzel szöveget jelölűnk szabadon illetve tartalmazhat számokat is)<br><br>
+
+Array (tömb egy gyűtő amiben sok elemet/értéket el tudunk helyezni, több tömböt is egymásba lehet ágyazni)<br><br>
+
+Object (objektum egy gyűtő amiben sok elemet/értéket el tudunk helyezni, hasonlít a tömbhöz, de itt inkább json és adatbázis adatokhoz használjuk)<br><br>
+
+Hogyan deklarálhatunk egy változót, és hogyan alkalmazhatóak?<br><br>
+
+let x = 0; Ha például csak egy funkción belül kell egy változó érték.<br><br>
+
+var i = 0; Ha több helyen is szeretnénk használni nem csak egy cikluson vagy funkción belül.<br><br>
+
+const y = 3; Ez egy fix nem változó érték<br><br>
+
+
+Mikor kell elágazásokat használni? Ismertesd őket (2-3 mondatban).<br><br>
+If/ else if/ else illetve case elágazások vannak. Ezeket akkor kell használnuk amikor még nem tudjuk a bevitt adat értékét és több kimenetel is <br><br>
+lehetséges. Ha szeretnénk lekezelni majdnem minden lehetőséget egy ismeretlen adattal kapcsolatban vagy pont az adatt hiányával kapcsolatban<br><br>
+
+
+Mikor azok az Objectek? Írj egy példát is.<br><br>
+
+var users ={<br>
+    user = "csaba"<br>
+    password = "zsírosdeszka"<br>
+}
+
+Szorosan egymáshoz fűződő adathalmazok, értékek amiket tudunk tömbösíteni objectekbe és egybe kezelni.<br>
+
+Helyes e a következő példa, ha nem miért nem?!pl: let x :  [ { x= fname: “John”, lname: “Doe, age: “34”},[1,2,3,4, “yes”, “no”] ];<br><br>
+
+Egy tömbön belűl azonos értékeket használunk nem vegyítjük lehetőleg csak számok vagy csak betűk.<br><br>
+
+
+Mik azok az Array-ek? Írj egy példát is.<br><br>
+
+Olyan parancsok amikkel a tömbösített értékeket lehet kezelni.<br><br>
+find/push/reduce értékek feltöltésére, módosítására, törlésére használjuk.<br><br>
+
+
+Hogyan vizsgálható egy tömb? 2-3 példát írj kérlek.
+A tömb összes eleme külön és tömbönként is vizsgálható: a tömbök hossza, egy-egy értéke. Ezeknek az értékeknek az összevonása, darabszáma, hossza<br><br>
+Osztani, szorozni lehet az értékeiket.<br><br>
+
+
+
+Hogyan mehetünk végig egy tömb/object/lista hosszán? (2-3 mondatban)<br><br>
+A tömb neve.lenght parancsal<br><br>
+Sorolj fel néhány events metódus.<br><br>
+Click figyelő<br><br>
+onchange<br><br>
+onload<br><br>
+Miért érdemes függvényeket használni?<br><br>
+Mert azokat csak egyszer kell megírni utána function-ként bármikor vissza tudjuk hívni ahol szükségünk van rá. Akkár egy sima összeadást is.<br><br>
+
+Hogyan paraméterezhetünk fel egy függvényt?<br><br>
+Minden esetben szüksége elátnunk változókkal, amikbe behetesíthetjük az értéket.<br><br>
+Az eredmény szintén eltárolhatjuk egy változóba vagy csak simán kiiratjuk.<br><br>
+
+Mi az a function visszatérési érték?<br><br>
+Amikor már a function elején megígérjük, hogy egy értékkel térünk vissza amint megkaptuk a szükséges beviteli értéket.<br><br>
+
+Mikor futtatható egy függvény?<br><br>
+Önmagában nem fut le minden esetben eseményhez kötött<br><br>
+
+Mi az a DOM?<br><br>
+Amikor js segítségével az eredeti html és css adatokat tartalmat, formát a js kódunk futtásával megváltoztatjuk újabb értékket adunk hozzá <br><br>
+Kicserélünk és visszaírunk értékeket anélkül, hogy hozzányúlnánk az eredeti html vagy css kódhoz a js futtatásával módosítjuk.
+
+Mire utasít a következő példa: document.getElementByClassName(“example”).innerText<br><br>
+Hogy vegye fel értéknek az example class névvel elátott szöveget.<br><br>
+
+Hogyan nyerhető ki egy form input mező értéke és hogyan jeleníted azt meg HTML-ben?<br><br>
+Egyedi id azonosítót adunk neki és az abba beírt értéket elmentjük egy változóba.<br><br>
+majd a vátozót DOM manupulációval visszaírjuk egy általunk meghatározott tag-be szintén egyedi értékkel.<br><br>
+
+var password = document.getElementById("password").value<br><br>
+document.getElementById("paros1").innerHTML = password;<br><br>
+
+
+
+Mi az a callback function?<br><br>
+
+Amikor még nem tudjuk mi lesz a végeredmény és a végén fogjuk visszahívni.<br><br>
+Út közben többször is felül tudjuk írni ujabb funkciókkal.
+<br><br>
+Definiált: Date();<br><br>
+Dátum értéket adhatunk meg különböző formátumokban, illetve kérhetünk le.<br><br>
+
+Definiáld: onclick();<br><br>
+Egy bizonyos kattintásra le fog futni egy funkció vagy az a js-es kód amit beállítottunk hozzá<br><br>
+
+Definiáld: function Click(){…};<br><br>
+Amikor adatokat küldünk be tömbökbe, objectekbe.<br><br>
+
+    </p>
+    
+</body>
+</html>
